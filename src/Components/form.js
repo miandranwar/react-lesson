@@ -43,7 +43,8 @@ class App2 extends Component {
             <input type="text" name="email" value={this.state.email} onChange={this.hendleall}></input>
             <button >Submit</button>
           </form>
-          <h1>Name : {this.state.username} <br/>
+          <h1>
+              Name : {this.state.username} <br />
               Email: {this.state.email}
           </h1>
         </div>
