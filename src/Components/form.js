@@ -7,6 +7,7 @@ class App2 extends Component {
     this.state = {
       username: "", //for default value insert text here
       email: "",
+      password: ""
     };
   }
 
@@ -25,7 +26,7 @@ class App2 extends Component {
   // write one handle function for every field
   hendleall = (event) => {
     this.setState({
-      [event.target.name]: event.target.value,
+      [event.target.name]: event.target.value
     });
   };
   handlersubmit = (event) => {
@@ -36,26 +37,43 @@ class App2 extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.handlersubmit}>
-          <label>User Name : </label>
+         <form onSubmit={this.handlersubmit}>
+          <label>User Name : 
           <input
             type="text"
             name="username"
             value={this.state.username}
             onChange={this.hendleall}
-          ></input>
+            ></input></label> <br></br>
+          <br></br>
+          <label> Email : 
           <input
-            type="text"
+            type="email"
             name="email"
             value={this.state.email}
             onChange={this.hendleall}
-          ></input>
+            ></input></label><br></br>
+          <br></br>
+          <label> Password : 
+           <input
+            type="password"
+            name="password"
+            value={this.state.password}
+            onChange={this.hendleall}
+            ></input></label><br></br>
+          <br></br>
           <button>Submit</button>
         </form>
         <h1>
           Name : {this.state.username} <br />
           Email: {this.state.email}
-        </h1>
+        </h1> 
+        {/* <FormChild
+          username={this.state.username}
+          email={this.state.email}
+          handlersubmit={this.state.handlersubmit}
+          handleall={this.state.handleall}
+        /> */}
       </div>
     );
   }

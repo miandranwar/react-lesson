@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import App2 from './Components/form';
+import FormChild from './Components/formChild';
 
 function App() {
   // inline styling
@@ -11,7 +11,7 @@ function App() {
   return (
     <div style={style}>
       <h1>React Form</h1>
-      <App2/>
+      <FormChild/>
     </div>
   );
 }
