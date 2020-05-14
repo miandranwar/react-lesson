@@ -7,13 +7,13 @@ export class FormChild extends Component {
     this.state = {
       username: "",
       email: "",
-      password: ""
+      password: "",
     };
   }
 
   handlechange = (event) => {
     this.setState({
-      [event.target.name]: event.target.value
+      [event.target.name]: event.target.value,
     });
   };
 
@@ -33,8 +33,7 @@ export class FormChild extends Component {
                 type="text"
                 name="username"
                 value={this.state.username}
-                onChange={this.handlechange}
-              ></input>
+                onChange={this.handlechange}></input>
             </label>
           </div>
           <div>
@@ -44,8 +43,7 @@ export class FormChild extends Component {
                 type="email"
                 name="email"
                 value={this.state.email}
-                onChange={this.handlechange}
-              ></input>
+                onChange={this.handlechange}></input>
             </label>
           </div>
           <div>
@@ -55,8 +53,7 @@ export class FormChild extends Component {
                 type="password"
                 name="password"
                 value={this.state.password}
-                onChange={this.handlechange}
-              ></input>
+                onChange={this.handlechange}></input>
             </label>
           </div>
           <button>Click Here</button>
@@ -64,6 +61,6 @@ export class FormChild extends Component {
       </div>
     );
   }
-};
+}
 
 export default FormChild;
