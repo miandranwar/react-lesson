@@ -68,12 +68,6 @@ class App2 extends Component {
           Name : {this.state.username} <br />
           Email: {this.state.email}
         </h1> 
-        {/* <FormChild
-          username={this.state.username}
-          email={this.state.email}
-          handlersubmit={this.state.handlersubmit}
-          handleall={this.state.handleall}
-        /> */}
       </div>
     );
   }

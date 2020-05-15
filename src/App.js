@@ -1,17 +1,16 @@
 import React from 'react';
 import './App.css';
-import FormChild from './Components/formChild';
+// import FormChild from './Components/formChild';
+// import Favourit from './Components/favourit';
+import Navbar from './Components/Nav-bar';
 
 function App() {
-  // inline styling
-  let style = {
-      color: 'purple',
-      textAlign: 'center'
-  }
   return (
-    <div style={style}>
-      <h1>React Form</h1>
-      <FormChild/>
+    <div className="main">
+      {/* <h1>React Form</h1> */}
+      {/* <FormChild/> */}
+      {/* <Favourit/> */}
+      <Navbar/>
     </div>
   );
 }
