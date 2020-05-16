@@ -1,16 +1,18 @@
-import React from 'react';
-import './App.css';
-// import FormChild from './Components/formChild';
-// import Favourit from './Components/favourit';
-import Navbar from './Components/Nav-bar';
+import React from "react";
+import "./App.css";
+import Header from "./Components/header";
 
 function App() {
   return (
     <div className="main">
-      {/* <h1>React Form</h1> */}
-      {/* <FormChild/> */}
-      {/* <Favourit/> */}
-      <Navbar/>
+      <div className="header">
+        <Header />
+      </div>
+      <div className="navbar">Nav</div>
+      <div className="mainbody">Main</div>
+      <div className="face">face</div> 
+      <div className="tweet">tweet</div> 
+      <div className="footer">Footer</div>
     </div>
   );
 }
